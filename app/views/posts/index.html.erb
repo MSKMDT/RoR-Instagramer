@@ -1,0 +1,17 @@
+<h1>Gram Feed</h1>
+
+	<div class="col-md-6 col-md-offset-3">
+		<% @post.each do |p| %>
+			<div class="row"><div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<strong>User <%= p.user.profile .user_name %></strong>
+					</div>	
+					<div class="panel-body">
+						<%= p.content %> 
+					</div> <!-- panel body -->
+				</div> <!-- panel-default -->
+			</div></div>  
+			
+		<% end %>
+	</div>

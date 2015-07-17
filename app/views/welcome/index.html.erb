@@ -1,0 +1,6 @@
+<h1>Instagramer</h1>
+<div class="row">
+	<% @posts.each do |p| %>
+		<%= render 'posts/minipost', :post => p %>
+	<% end %>
+</div>
